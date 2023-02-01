@@ -13,14 +13,13 @@
   <body>
     <!-- ===== START SITE HEADER ===== -->
     <header class="my-5 text-center">
-      <h4 id="full-day">00:00:00</h4>
+      <h4 id="full-day">Day, Month, Year</h4>
       <div class="time-container">
         <span id="hour">Hh</span>
         :
         <span id="minute">Mm</span>
         :
         <span id="second">Ss</span>
-        :
       </div>
       <h1 class="display-2 text-primary">Crud Todolist</h1>
       <small>
@@ -47,7 +46,8 @@
         <button class="btn btn-outline-primary d-block ms-auto">Add</button>
       </form>
 
-      <ul id="list-group__todo" class="list-group"></ul>
+      <ul id="list-group__todo" class="list-group">
+      </ul>
 
       <!-- MODAL -->
       <div id="modal" class="modal-todo hidden">
@@ -56,7 +56,7 @@
             class="card-header d-flex justify-content-between align-items-center"
           >
             <h5>Change this todo</h5>
-            <img
+            <img id="close"
               src="images/close.svg"
               width="25"
               height="25"
